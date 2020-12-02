@@ -1,0 +1,31 @@
+variable "cidr_block" {
+  type        = string
+  description = "CIDR block for VPC"
+}
+
+variable "environment" {
+  type        = string
+  description = "Environment"
+}
+
+variable "dx_gateway_id" {
+  type        = string
+  description = "Direct Connect gateway ID"
+}
+
+variable "es_port" {
+  type        = number
+  default     = 9243
+  description = "Elasticsearch port"
+}
+
+variable "bastion_nlb_cidr" {
+  type    = list(string)
+  default = []
+}
+
+variable "production_account" {
+  type        = bool
+  default     = false
+  description = "Enabled only for production AWS account"
+}
