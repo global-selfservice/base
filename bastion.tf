@@ -22,7 +22,7 @@ module "bastion" {
   }
 
   ssh_principals = [
-    "self-service-${var.environment}-bastion",
-    "self-service-${var.environment}"
+    "selfservice-${var.environment}-bastion",
+    "selfservice-${var.environment}"
   ]
 }

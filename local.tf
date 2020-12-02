@@ -1,5 +1,5 @@
 locals {
-  name    = "self-service-${var.environment}"
-  product = "self-service"
+  name    = "selfservice-${var.environment}"
+  product = "selfservice"
   env_dns = "${var.environment}.selfservice.global.com"
 }
