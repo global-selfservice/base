@@ -73,7 +73,7 @@ output "environment" {
   value       = var.environment
 }
 
-#output "bastion_security_group_id" {
-#  value       = module.bastion.security_group_id
-#  description = "Bastion security group ID"
-#}
+output "bastion_security_group_id" {
+  value       = module.bastion.security_group_id
+  description = "Bastion security group ID"
+}
