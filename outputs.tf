@@ -43,15 +43,15 @@ output "rds_subnet_group" {
   description = "RDS subnet group"
 }
 
-#output "zone_id" {
-#  value       = module.external_zone.zone_id
-#  description = "External DNS zone ID for each env"
-#}
+output "zone_id" {
+  value       = module.external_zone.zone_id
+  description = "External DNS zone ID for each env"
+}
 
-#output "domain_name" {
-#  value       = module.external_zone.domain_name
-#  description = "External DNS domain name for each env"
-#}
+output "domain_name" {
+  value       = module.external_zone.domain_name
+  description = "External DNS domain name for each env"
+}
 
 output "bucket_name" {
   description = "Name of the logging Bucket"
