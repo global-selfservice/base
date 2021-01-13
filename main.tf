@@ -1,5 +1,5 @@
 module "eks" {
-  source = "github.com/global-devops-terraform/eks?ref=v0.45.7"
+  source = "github.com/global-devops-terraform/eks?ref=v0.46.1"
 
   name           = local.name
   environment    = var.environment
