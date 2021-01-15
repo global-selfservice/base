@@ -17,10 +17,6 @@ module "bastion" {
     var.bastion_nlb_cidr
   ])
 
-  tags = {
-    Name = "bastion"
-  }
-
   ssh_principals = [
     "selfservice-${var.environment}-bastion",
     "selfservice-${var.environment}"
