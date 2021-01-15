@@ -1,5 +1,5 @@
 module "external_zone" {
-  source = "github.com/global-devops-terraform/dns-zone?ref=v0.15.0"
+  source = "github.com/global-devops-terraform/dns-zone?ref=v0.16.0"
 
   name        = "external-${var.environment}"
   domain_name = local.env_dns
