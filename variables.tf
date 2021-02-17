@@ -8,11 +8,6 @@ variable "environment" {
   description = "Environment"
 }
 
-variable "dx_gateway_id" {
-  type        = string
-  description = "Direct Connect gateway ID"
-}
-
 variable "es_port" {
   type        = number
   default     = 9243
