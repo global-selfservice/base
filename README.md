@@ -82,3 +82,35 @@ You're now on a new, empty workspace. Workspaces isolate their state,
 so if you run "terraform plan" Terraform will not see any existing state
 for this configuration.
 ```
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|:----:|:-----:|:-----:|
+| cidr\_block | CIDR block for VPC | string | n/a | yes |
+| dx\_gateway\_id | Direct Connect gateway ID | string | n/a | yes |
+| environment | Environment | string | n/a | yes |
+| bastion\_nlb\_cidr |  | list(string) | `[]` | no |
+| es\_port | Elasticsearch port | number | `"9243"` | no |
+| production\_account | Enabled only for production AWS account | bool | `"false"` | no |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| availability\_zones | Availability zones |
+| bastion\_security\_group\_id | Bastion security group ID |
+| bucket\_name | Name of the logging Bucket |
+| cluster\_name | Kubernetes cluster name |
+| cluster\_oidc\_issuer\_url | The URL on the EKS cluster OIDC Issuer |
+| cluster\_sg | Cluster primary SG |
+| domain\_name | External DNS domain name for each env |
+| environment | The dev/prod environment |
+| persistence\_subnets | Persistence subnet IDs |
+| private\_subnets | Private subnet IDs |
+| public\_subnets | Public subnet IDs |
+| rds\_subnet\_group | RDS subnet group |
+| vpc\_id | VPC ID |
+| worker\_role | Kubernetes worker role |
+| worker\_sg | Worker SG |
+| zone\_id | External DNS zone ID for each env |
