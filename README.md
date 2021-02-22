@@ -88,7 +88,6 @@ for this configuration.
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | cidr\_block | CIDR block for VPC | string | n/a | yes |
-| dx\_gateway\_id | Direct Connect gateway ID | string | n/a | yes |
 | environment | Environment | string | n/a | yes |
 | bastion\_nlb\_cidr |  | list(string) | `[]` | no |
 | es\_port | Elasticsearch port | number | `"9243"` | no |
