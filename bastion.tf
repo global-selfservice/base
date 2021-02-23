@@ -1,5 +1,5 @@
 module "bastion" {
-  source = "github.com/global-devops-terraform/bastion?ref=v0.58.1"
+  source = "github.com/global-devops-terraform/bastion?ref=v0.59.0"
 
   name            = local.name
   vpc_id          = module.vpc.vpc_id
