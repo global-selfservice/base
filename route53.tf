@@ -1,7 +1,5 @@
-module "external_zone" {
-  source = "github.com/global-devops-terraform/dns-zone?ref=v0.18.1"
-
-  domain_name = local.env_dns
+resource "aws_route53_zone" "zone" {
+  name = local.env_dns
 
   tags = {
     Product     = local.product
