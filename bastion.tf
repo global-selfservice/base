@@ -9,7 +9,7 @@ module "bastion" {
   environment     = var.environment
   logs_s3_bucket  = module.logs.bucket_name
   logs_prefix     = "bastion"
-  dns_zone_id     = module.external_zone.zone_id
+  dns_zone_id     = aws_route53_zone.zone.zone_id
   domain_name     = local.env_dns
 
   allow_cidr = flatten([
