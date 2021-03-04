@@ -44,12 +44,12 @@ output "rds_subnet_group" {
 }
 
 output "zone_id" {
-  value       = module.external_zone.zone_id
+  value       = aws_route53_zone.zone.zone_id
   description = "External DNS zone ID for each env"
 }
 
 output "domain_name" {
-  value       = module.external_zone.domain_name
+  value       = aws_route53_zone.zone.name
   description = "External DNS domain name for each env"
 }
 
