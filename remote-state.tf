@@ -2,7 +2,7 @@ data "terraform_remote_state" "account" {
   backend = "s3"
 
   config = {
-    bucket         = var.production_account ? "global-self-service-terraform-state" : "global-self-service-dev-terraform-state"
+    bucket         = local.state_bucket
     key            = "account.tfstate"
     region         = "eu-west-1"
     dynamodb_table = "terraform-state-lock"

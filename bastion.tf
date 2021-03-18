@@ -11,14 +11,10 @@ module "bastion" {
   logs_prefix     = "bastion"
   dns_zone_id     = aws_route53_zone.zone.zone_id
   domain_name     = local.env_dns
+  ssh_principals  = local.ssh_principals
 
   allow_cidr = flatten([
     module.common.global_lan_cidr,
     var.bastion_nlb_cidr
   ])
-
-  ssh_principals = [
-    "selfservice-${var.environment}-bastion",
-    "selfservice-${var.environment}"
-  ]
 }
