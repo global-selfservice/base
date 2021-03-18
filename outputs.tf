@@ -54,8 +54,8 @@ output "domain_name" {
 }
 
 output "bucket_name" {
-  description = "Name of the logging Bucket"
   value       = module.logs.bucket_name
+  description = "Name of the logging Bucket"
 }
 
 output "cluster_sg" {
@@ -69,8 +69,8 @@ output "worker_sg" {
 }
 
 output "environment" {
-  description = "The dev/prod environment"
   value       = var.environment
+  description = "Environment"
 }
 
 output "bastion_security_group_id" {

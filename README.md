@@ -104,7 +104,7 @@ for this configuration.
 | cluster\_oidc\_issuer\_url | The URL on the EKS cluster OIDC Issuer |
 | cluster\_sg | Cluster primary SG |
 | domain\_name | External DNS domain name for each env |
-| environment | The dev/prod environment |
+| environment | Environment |
 | persistence\_subnets | Persistence subnet IDs |
 | private\_subnets | Private subnet IDs |
 | public\_subnets | Public subnet IDs |
