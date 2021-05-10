@@ -1,5 +1,5 @@
 module "shared_services" {
-  source = "github.com/global-devops-terraform/peering?ref=v0.14.0"
+  source = "github.com/global-devops-terraform/peering?ref=v0.14.1"
 
   vpc_id                  = module.vpc.vpc_id
   other                   = module.common.shared_services
@@ -8,7 +8,7 @@ module "shared_services" {
 }
 
 module "devops_team" {
-  source = "github.com/global-devops-terraform/peering?ref=v0.14.0"
+  source = "github.com/global-devops-terraform/peering?ref=v0.14.1"
 
   vpc_id                  = module.vpc.vpc_id
   other                   = module.common.devops_team
@@ -17,7 +17,7 @@ module "devops_team" {
 }
 
 module "ct_team" {
-  source = "github.com/global-devops-terraform/peering?ref=v0.14.0"
+  source = "github.com/global-devops-terraform/peering?ref=v0.14.1"
 
   vpc_id                  = module.vpc.vpc_id
   other                   = module.common.ct_team
