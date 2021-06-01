@@ -1,3 +1,5 @@
+setup
+
 terraform([
     aws: [role: "jenkins-devops", account: "435559816706"],
     stages: [

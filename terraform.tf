@@ -6,4 +6,11 @@ terraform {
     dynamodb_table = "terraform-state-lock"
     encrypt        = true
   }
+
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "3.40.0"
+    }
+  }
 }
